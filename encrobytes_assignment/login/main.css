@@ -1,0 +1,104 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+.main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: 100vw;
+  background-color: #2ecc71;
+  border-radius: 5px;
+}
+.wrapper {
+  width: 30vw;
+  height: 60vh;
+  background-color: white;
+  border-radius: 10px;
+}
+h2 {
+  text-align: center;
+  color: white;
+  background-color: lightgreen;
+  text-transform: capitalize;
+  margin-bottom: 15px;
+  padding: 15px;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+form {
+  width: 80%;
+  margin: 50px auto;
+  padding: 5px;
+}
+input {
+  width: 100%;
+  padding: 15px;
+  margin: 5px;
+  outline: none;
+  border: none;
+  background-color: #e5e7e9;
+  border-bottom: 1px solid black;
+  font-size: 1.2rem;
+}
+.wrapper form div {
+  position: relative;
+  margin: 15px 0px;
+}
+.wrapper form div label {
+  position: absolute;
+  left: 16px;
+  top: 15px;
+  transition: 0.5s;
+}
+.wrapper input:focus ~ label,
+.wrapper input:valid ~ label {
+  top: 0px;
+  left: 16px;
+}
+.wrapper input:focus {
+  border-bottom: 4px solid #145a32;
+}
+.btn {
+  text-align: center;
+}
+button {
+  width: 25%;
+  padding: 5px;
+  cursor: pointer;
+  outline: none;
+  border: none;
+  color: white;
+  background-color: #2ecc71;
+  border-radius: 5px;
+  text-transform: capitalize;
+  font-size: 1.2rem;
+}
+button:hover {
+  color: #145a32;
+}
+.link {
+  width: 80%;
+  margin: 100px auto;
+  text-align: center;
+}
+.link a {
+  text-decoration: none;
+  color: #2ecc71;
+}
+.link a:hover {
+  color: #145a32;
+}
+span {
+  color: #99a3a4;
+}

@@ -1,0 +1,90 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+.main {
+  display: flex;
+  height: 100vh;
+}
+.background {
+  flex: 3;
+  background-image: url(./luke-chesser-pJadQetzTkI-unsplash.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-transform: capitalize;
+  color: white;
+}
+.wrapper {
+  flex: 1;
+  width: 30vw;
+  height: 100vh;
+}
+h2 {
+  text-align: center;
+  color: black;
+  text-transform: capitalize;
+  margin: 50px;
+}
+form {
+  width: 80%;
+  margin: 5px auto;
+  padding: 5px;
+}
+input {
+  width: 100%;
+  padding: 15px;
+  outline: none;
+  border: none;
+  border-bottom: 1px solid black;
+  font-size: 1.2rem;
+}
+.wrapper form div {
+  position: relative;
+  margin: 15px 0px;
+}
+.wrapper form div label {
+  position: absolute;
+  left: 15px;
+  top: 15px;
+  transition: 0.5s;
+}
+.wrapper input:focus ~ label,
+.wrapper input:valid ~ label {
+  top: -3px;
+  left: 15px;
+}
+.wrapper input:focus {
+  border-bottom: 4px solid #4000ff;
+}
+.btn {
+  text-align: center;
+}
+button {
+  width: 35%;
+  padding: 5px;
+  cursor: pointer;
+  outline: none;
+  border: none;
+  color: white;
+  background-color: #273746;
+  border-radius: 5px;
+  text-transform: capitalize;
+  font-size: 1.2rem;
+}
+i {
+  position: absolute;
+  top: 5px;
+  right: 5px;
+  color: black;
+  cursor: pointer;
+}
+.hide {
+  display: hidden;
+}
